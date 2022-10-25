@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: $primary-font;
+    font-size: 16px;
+    line-height: 1;
+    
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    // font-family: $primary-font;
+    font-size: 14px;
+    outline: none;
+    border: 0;
+  }
+  input {
+    line-height: normal;
+  }
+  .container {
+    max-width: 1510px;
+    margin: 0 auto;
+    padding: 0 129px;
+  }
+  @include maxw(1023px) {
+    .container{
+        padding: 0 15px;
+    }
+  }
+  @include maxw(767px) {
+      .container{
+        padding: 0 15px;
+    }
+  }

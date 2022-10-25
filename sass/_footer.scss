@@ -1,0 +1,11 @@
+.footer{
+    &__container{
+        &>p{
+            border-top: 1px solid #DEDEDE;
+            padding: 30px 0 30px 129px ;
+            font-size: 16px;
+            font-weight: 400;
+            color:#3E3E3E;
+        }
+    }
+}

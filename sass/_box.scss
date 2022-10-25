@@ -1,0 +1,41 @@
+.box{
+    padding: 40px 0 182px 0;
+    &__container{
+        @include display(flex,"",center,center);
+        gap: 0 50px;
+    }
+    &__item{
+        
+    }
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 18px;
+        
+    }
+    &__desc{
+        // background-color:antiquewhite;
+    }
+    &__image{
+        width:128px;
+        height: 128px;
+        background: url(../image/css-icon\ 1.png);
+        float: left;
+    }
+    &__text{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        box-sizing: border-box;
+    }
+}
+@include maxw(767px) {
+    .box{
+      &__container{
+        flex-direction: column;
+        gap: 40px 0;
+      }
+  }
+}
